@@ -1,6 +1,6 @@
-import commonConfig from './jest.config.js';
+const commonConfig =  require('./jest.config.js');
 
-export default {
+module.exports = {
   ...commonConfig,
   testMatch: [
     '**/*.unit.test.{js,ts}'
