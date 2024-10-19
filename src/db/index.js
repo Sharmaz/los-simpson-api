@@ -5,7 +5,7 @@ const USER = encodeURIComponent(config.dbUser);
 const PASSWORD = encodeURIComponent(config.dbPassword);
 const getURI = (dialect) => `${dialect}://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`;
 
-export default {
+module.exports = {
   url: getURI('mysql'),
   dialect: 'mysql',
   dialectOptions: {
